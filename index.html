@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>train form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <main id="train">
+        <div class="container">
+            <div class="row mt-4 selector">
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Nome</label>
+                    <input type="name" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Cognome</label>
+                    <input type="surname" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">km</label>
+                    <input type="email" placeholder="Inserisci i km che vuoi percorrere" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">City</label>
+                    <input type="city" placeholder="Inserisci la città" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12 pt-4">
+
+                    <select name="color" class="form-control mb-2" id="">
+                        <option value="">-- seleziona lo sconto da applicare --</option>
+                        <option value="1">Sconto under18</option>
+                        <option value="2">Sconto over65</option>
+                        <option value="3">Nessuno sconto</option>
+                    </select>
+                    <input type="button" class="btn btn-secondary mt-2" value="applica">
+                </div>
+            </div>
+        </div>
+        <div class="container my-4">
+            <div class="">
+
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                    <h1 class="text-uppercase text-center">
+                        Complimenti! ecco il tuo biglietto
+                    </h1>
+                </div>
+                
+                <div class="card-ticket row dati-user align-items-end mt-4 ">
+                    <div class="col-3 text-center ">
+                        <h4 class="text-uppercase fs-5">
+                            prezzo 
+                        </h4>
+                        <button id="prezzo-finale"  class="my-3 btn-dati  btn-primary">
+                            ... 
+                        </button>
+                    </div>
+                    <div class="col-3 text-center ">
+                        <h4 class="text-uppercase fs-5">
+                         Nome Cognome
+                        </h4>
+                        <button id="name"  class="my-3 btn-dati  btn-primary">
+                            ...
+                        </button>
+                    </div>
+                    <div class="col-3 text-center">
+                        <h4 class="text-uppercase fs-5">
+                            città e km
+                        </h4>
+                        <button id="town"  class="my-3 btn-dati  btn-primary">
+                            ...
+                        </button>
+                    </div>
+                    <div class="col-3 text-center">
+                        <h4 class="text-uppercase fs-5">
+                            Carrozza
+                        </h4>
+                        <button id="number-carrozza"  class="my-3 btn-dati  btn-primary">
+                        ... 
+                        </button>
+                    </div>
+            </div>
+        </div>
+            
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
